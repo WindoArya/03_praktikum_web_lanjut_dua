@@ -1,21 +1,23 @@
 <div class="box search">
     <h2>Search by <span></span></h2>
     <div class="box-content">
-      <form action="#" method="post">
+      <form action="#" method="post"> <!--{/{action{'NavigationController'}}}-->
         <label>Keyword</label>
         <input type="text" class="field" />
         <label>Category</label>
         <select class="field">
           <option value="">-- Select Category --</option>
+          <option value="Pria">Pria</option>
+          <option value="Wanita">Wanita</option>
         </select>
         <div class="inline-field">
           <label>Price</label>
           <select class="field small-field">
-            <option value="">$10</option>
+            <option value="">50000</option>
           </select>
           <label>to:</label>
           <select class="field small-field">
-            <option value="">$50</option>
+            <option value="">100000</option>
           </select>
         </div>
         <input type="submit" class="search-submit" value="Search" />
