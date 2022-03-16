@@ -18,7 +18,7 @@ class CreateArtikelsTable extends Migration
             $table->string('nama', 50);
             $table->string('ketegori', 50);
             $table->integer('harga');
-            $table->text('image');
+            $table->string('image',255);
             $table->timestamps();
         });
     }

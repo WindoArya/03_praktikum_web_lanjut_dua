@@ -19,6 +19,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::prefix('products')->group(function(){
     Route::get('/', [NavigationController::class, 'products'])->name('products');
+    Route::post('/', [NavigationController::class, 'products'])->name('products');
     Route::get('/pria', [NavigationController::class, 'products-pria'])->name('pria');
     Route::get('/wanita', [NavigationController::class, 'products-wanita'])->name('wanita');
 });

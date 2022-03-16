@@ -1,11 +1,12 @@
 <div class="box search">
     <h2>Search by <span></span></h2>
     <div class="box-content">
-      <form action="#" method="post"> <!--{/{action{'NavigationController'}}}-->
+      <form action="{{url('/products')}}" method="post"> <!--{/{action{'NavigationController'}}}-->
+        @csrf
         <label>Keyword</label>
-        <input type="text" class="field" />
+        <input name="keyword" type="text" class="field" />
         <label>Category</label>
-        <select class="field">
+        <select name="kategori" class="field">
           <option value="">-- Select Category --</option>
           <option value="Pria">Pria</option>
           <option value="Wanita">Wanita</option>
